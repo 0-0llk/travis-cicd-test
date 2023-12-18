@@ -11,3 +11,11 @@ script:
   - docker run -e CI=true kde/docker-react-app npm run test -- --coverage
 after_success:
   - echo "Test success.."
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  region: "ap-northeast-2"
+  app: "docker-cicd-sample"
+  env: "Docker-cicd-sample-env"
+  bucket_name: "elasticbeanstalk-ap-northeast-2-653339226133"
