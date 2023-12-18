@@ -8,6 +8,6 @@ services:
       - /svc/app/docker-react-app/node_modules
       - ./:/svc/app/docker-react-app
     ports:
-      - 5000:3000
+      - 80:80
     
   
