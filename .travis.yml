@@ -19,3 +19,5 @@ deploy:
   app: "docker-cicd-sample"
   env: "Docker-cicd-sample-env"
   bucket_name: "elasticbeanstalk-ap-northeast-2-653339226133"
+  on:
+    branch: main
