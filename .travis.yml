@@ -1,6 +1,6 @@
 services:
   - docker
-before_intsall:
+before_install:
   - echo "Enter before install stage.."
   - echo "Start creating an image with dockerfile.."
   - docker build -t kde/docker-react-app -f Dockerfile.dev .
