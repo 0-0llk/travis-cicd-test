@@ -8,4 +8,4 @@ script:
   - echo "Run test"
   - docker run -e CI=true kde/docker-react-app npm run test -- --coverage
 after_success:
-  - echo "Test success"
+  - echo "Test success.."
