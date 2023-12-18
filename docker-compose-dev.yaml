@@ -9,5 +9,13 @@ services:
       - ./:/svc/app/docker-react-app
     ports:
       - 5000:3000
+  test-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /svc/app/docker-react-app/node_modules
+      - ./:/svc/app/docker-react-app
+
     
   
