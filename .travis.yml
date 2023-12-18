@@ -1,5 +1,5 @@
 language:
-  - node_js
+  - generic
 services:
   - docker
 before_install:
